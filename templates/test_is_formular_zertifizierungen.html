@@ -1,0 +1,25 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+    {% if name != None: %}
+        <h1>Der Name ist: {{ name }}</h1>
+    {% endif %}
+
+    <form method="get">
+        <!-- zert_id label for="age">Alter:</label>
+        <input type="text" name="age" id="age" value="{% if age != None %}{{ age }}{% endif %}"/-->
+
+        <label for="zert_name">Name Zertifizierung: </label>
+        <input type="text" name="zert_name" id="zert_name" value="{% if name != None %}{{ name }}{% endif %}" />
+
+        <label for="zert_beschreibung">Name Zertifizierung: </label>
+        <input type="text" name="zert_beschreibung" id="zert_beschreibung" value="{% if name != None %}{{ name }}{% endif %}" />
+
+        <label for="zert_date">Name Zertifizierung: </label>
+        <input type="text" name="zert_name" id="zert_date" value="{% if name != None %}{{ name }}{% endif %}" />
+
+        <br />
+
+        <input type="submit" value="Zertifizierung eintragen" />
+    </form>
+{% endblock %}
